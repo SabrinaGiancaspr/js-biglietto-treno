@@ -47,7 +47,7 @@
 let discountOver65 = (fullprice * percentDiscountOver65) / 100; 
 
 // -prezzo finale biglietto
-let finalPrice; 
+let finalPrice;
 
 //  condizionali
  if (age < 18) { //se è minorenne applica sconto 20%
@@ -58,6 +58,12 @@ let finalPrice;
   finalPrice = fullprice;
 }
 
+// cifra con massimo due decimali
+finalPrice = Number(finalPrice.toFixed(2)); 
+
 console.log(finalPrice);
 
-
+// stampa html
+let prezzo = finalPrice;
+const prezzoDomElement = document.getElementById('prezzo');
+prezzoDomElement.innerHTML = prezzo;
