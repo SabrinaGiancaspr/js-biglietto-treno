@@ -59,7 +59,7 @@ let finalPrice;
 }
 
 // cifra con massimo due decimali
-finalPrice = Number(finalPrice.toFixed(2)); 
+finalPrice = finalPrice.toFixed(2); 
 
 console.log(finalPrice);
 
